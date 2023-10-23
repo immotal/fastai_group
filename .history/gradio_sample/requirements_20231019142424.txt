@@ -1,0 +1,8 @@
+fastai
+scikit-image
+
+
+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
+
+
+git remote set-url origin https://lifp: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@huggingface.co/spaces/lifp/

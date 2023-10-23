@@ -1,0 +1,5 @@
+from fastai.vision.all import *
+path = untar_data(URLs.PETS)
+dls = ImageDataLoaders.from_name_re(
+    path, get_image_files(path/'images'), item_tfms=Resize(460), batch_tfms=aug_transforms(size=224, min_scale=0.75)
+)
